@@ -1,0 +1,2 @@
+# hrmerrill.dev
+Static homepage.

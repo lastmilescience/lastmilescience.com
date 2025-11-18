@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hunter Merrill is an independent consultant using data science and machine learning engineering to build evidence-based solutions.">
+    <meta name="robots" content="index, follow">
     <title>Hunter Merrill | Scientist & ML Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://hrmerrill.dev/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -21,7 +25,6 @@
             <img src="hrmerrill_logo_no_background.png" alt="Hunter R. Merrill Logo">
         </div>
 
-        <!-- CV Link -->
         <nav>
             <a href="#about"
                 class="text-sm font-normal hover:opacity-60 transition-opacity uppercase tracking-wider">About</a>
@@ -33,8 +36,14 @@
     <!-- Main Content Grid -->
     <main class="flex-grow grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20 items-start">
 
+        <!-- Right Column: Headshot -->
+        <div class="lg:col-span-1 flex justify-center lg:justify-start lg:order-last">
+            <img class="w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover"
+                src="https://hrmerrill.github.io/resources/headshot.jpeg" alt="Headshot of Hunter Merrill">
+        </div>
+
         <!-- Left Column: Text Content -->
-        <div class="flex flex-col space-y-10 fade-in lg:col-span-2" style="animation-delay: 0.1s;">
+        <div class="flex flex-col space-y-10 fade-in lg:col-span-2 lg:order-first" style="animation-delay: 0.1s;">
 
             <!-- Intro Block -->
             <div class="space-y-4">
@@ -100,24 +109,43 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+                (function () {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function () {
+                        calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0fBVCnpC6EeE2xsdO6i8MtxVJF_Ecb-_z8xpCAwXrlan13aGkiwk7zbnSq5c6lukM-1ft5vEEF?gv=true',
+                            color: '#a33b3b',
+                            label: 'Book an appointment',
+                            target,
+                        });
+                    });
+                })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+
+
+            <!-- Footer -->
+            <footer class="text-center py-8 mt-auto">
+                <div class="text-sm text-gray-500">
+                    <p>&copy; 2025 Hunter Merrill LLC. All Rights Reserved.</p>
+                    <p class="mt-2">
+                        <a target="_blank" rel="noopener noreferrer" href="mailto:info@hrmerrill.dev"
+                            class="hover:underline">info@hrmerrill.dev</a> &middot;
+                        <a target="_blank" rel="noopener noreferrer" href="https://hrmerrill.github.io/"
+                            class="hover:underline">CV</a> &middot;
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/hunter-r-merrill-phd-3996b639/"
+                            class="hover:underline">LinkedIn</a>
+                    </p>
+                </div>
+            </footer>
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="text-center py-8 mt-auto">
-        <div class="text-sm text-gray-500">
-            <p>&copy; 2025 Hunter Merrill LLC. All Rights Reserved.</p>
-            <p class="mt-2">
-                <a target="_blank" rel="noopener noreferrer" href="mailto:info@hrmerrill.dev"
-                    class="hover:underline">info@hrmerrill.dev</a> &middot;
-                <a target="_blank" rel="noopener noreferrer" href="https://hrmerrill.github.io/"
-                    class="hover:underline">CV</a> &middot;
-                <a target="_blank" rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/hunter-r-merrill-phd-3996b639/"
-                    class="hover:underline">LinkedIn</a>
-            </p>
-        </div>
-    </footer>
 </body>
 
 </html>

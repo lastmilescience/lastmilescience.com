@@ -1,0 +1,85 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F9F9F7;
+    color: #1a1a1a;
+}
+
+/* Custom underline style for the links */
+.custom-link {
+    text-decoration: none;
+    border-bottom: 2px solid #d65d5d;
+    padding-bottom: 1px;
+    transition: border-color 0.2s ease;
+}
+
+.custom-link:hover {
+    border-color: #a33b3b;
+}
+
+/* Smooth fade in */
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+/* Navigation / header sizing variables and rules */
+:root {
+    /* Adjust this value to change the nav height globally */
+    --nav-height: 72px;
+}
+
+header {
+    height: var(--nav-height);
+    align-items: center;
+    /* vertically center header content */
+}
+
+header img {
+    width: calc(var(--nav-height) - 16px);
+    height: calc(var(--nav-height) - 16px);
+    object-fit: contain;
+}
+
+nav a {
+    font-size: 0.95rem;
+    /* slightly larger than previous text-sm */
+    padding: 16px 14px;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive: smaller nav and footer text on small screens */
+@media (max-width: 640px) {
+
+    /* reduce nav height slightly on small devices for better balance */
+    :root {
+        --nav-height: 64px;
+    }
+
+    header {
+        height: var(--nav-height);
+    }
+
+    header img {
+        width: calc(var(--nav-height) - 16px);
+        height: calc(var(--nav-height) - 16px);
+    }
+
+    nav a {
+        font-size: 0.75rem;
+        padding: 16px 10px;
+    }
+
+    footer,
+    footer .text-sm,
+    footer p {
+        font-size: 0.75rem;
+    }
+}

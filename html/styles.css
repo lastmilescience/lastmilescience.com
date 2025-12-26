@@ -25,7 +25,7 @@ body {
     color: var(--orange-dark);
     border-bottom: 2px solid var(--orange-dark);
     padding-bottom: 1px;
-    transition: border-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .custom-link:hover {

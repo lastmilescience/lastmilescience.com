@@ -105,6 +105,6 @@ nav a {
 footer {
     background-color: var(--green-dark);
     color: var(--bg-main);
-    padding: 9px;
+    padding: 16px;
     text-align: center;
 }

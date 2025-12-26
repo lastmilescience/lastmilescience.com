@@ -1,19 +1,30 @@
+:root {
+    --bg-main: #F9F9F7;
+    --bg-secondary: #e3c9b5;
+    --text-main: #1a1a1a;
+    --text-secondary: #555555;
+    --orange-dark: #cf5f3a;
+    --orange-light: #f7bc9d;
+    --green-dark: #758362;
+    --green-light: #bccbae;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #F9F9F7;
-    color: #1a1a1a;
+    background-color: var(--bg-main);
+    color: var(--text-main);
 }
 
 /* Custom underline style for the links */
 .custom-link {
     text-decoration: none;
-    border-bottom: 2px solid #d65d5d;
+    border-bottom: 2px solid var(--orange-dark);
     padding-bottom: 1px;
     transition: border-color 0.2s ease;
 }
 
 .custom-link:hover {
-    border-color: #a33b3b;
+    border-color: var(--orange-dark);
 }
 
 /* Smooth fade in */

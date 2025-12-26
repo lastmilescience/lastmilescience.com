@@ -98,3 +98,10 @@ nav a {
         font-size: 0.75rem;
     }
 }
+
+footer {
+    background-color: var(--green-dark);
+    color: var(--bg-main);
+    padding: 3px;
+    text-align: center;
+}

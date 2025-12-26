@@ -1,2 +1,2 @@
-# hrmerrill.dev
+# Last Mile Science
 Static homepage.

@@ -28,7 +28,7 @@ body {
 }
 
 .custom-link:hover {
-    border-color: var(--orange-dark);
+    border-color: var(--orange-light);
 }
 
 /* Smooth fade in */
@@ -102,6 +102,5 @@ nav a {
 footer {
     background-color: var(--green-dark);
     color: var(--bg-main);
-    padding: 3px;
     text-align: center;
 }

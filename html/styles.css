@@ -22,6 +22,7 @@ body {
 /* Custom underline style for the links */
 .custom-link {
     text-decoration: none;
+    color: var(--orange-dark);
     border-bottom: 2px solid var(--orange-dark);
     padding-bottom: 1px;
     transition: border-color 0.2s ease;
@@ -29,6 +30,7 @@ body {
 
 .custom-link:hover {
     border-color: var(--orange-light);
+    color: var(--orange-light);
 }
 
 /* Smooth fade in */
@@ -102,5 +104,6 @@ nav a {
 footer {
     background-color: var(--green-dark);
     color: var(--bg-main);
+    padding: 3px;
     text-align: center;
 }

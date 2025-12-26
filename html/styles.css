@@ -105,7 +105,7 @@ nav a {
 }
 
 footer {
-    background-image: linear-gradient(to right, 0% var(--green-dark), 50% var(--green-dark), 100% var(--green-light));
+    background-image: linear-gradient(to right, var(--green-dark), var(--green-dark), var(--green-light));
     color: var(--bg-main);
     padding: 16px;
     text-align: center;

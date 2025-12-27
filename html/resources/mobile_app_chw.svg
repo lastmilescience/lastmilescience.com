@@ -1,0 +1,37 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Phone Body -->
+    <rect x="100" y="40" width="200" height="320" rx="30" fill="#F3F4F6" stroke="#111827" stroke-width="8"/>
+    
+    <!-- Screen -->
+    <rect x="120" y="70" width="160" height="260" fill="white"/>
+    
+    <!-- Screen Header -->
+    <rect x="120" y="70" width="160" height="40" fill="#cf5f3a"/>
+    <rect x="130" y="85" width="20" height="10" rx="2" fill="white" opacity="0.8"/>
+    <rect x="250" y="85" width="20" height="10" rx="2" fill="white" opacity="0.8"/>
+
+    <!-- Question 1 -->
+    <rect x="135" y="130" width="130" height="8" rx="4" fill="#111827" opacity="0.8"/>
+    <rect x="135" y="145" width="80" height="8" rx="4" fill="#111827" opacity="0.4"/>
+    
+    <!-- Input 1 -->
+    <rect x="135" y="165" width="130" height="25" rx="4" stroke="#cf5f3a" stroke-width="2" fill="#F9FAFB"/>
+    
+    <!-- Question 2 -->
+    <rect x="135" y="210" width="100" height="8" rx="4" fill="#111827" opacity="0.8"/>
+    <rect x="135" y="225" width="60" height="8" rx="4" fill="#111827" opacity="0.4"/>
+
+     <!-- Radio Options -->
+    <circle cx="145" cy="255" r="6" stroke="#cf5f3a" stroke-width="2" fill="white"/>
+    <rect x="160" y="251" width="40" height="8" rx="2" fill="#111827" opacity="0.6"/>
+    
+    <circle cx="215" cy="255" r="6" stroke="#cf5f3a" stroke-width="2" fill="#cf5f3a"/>
+    <rect x="230" y="251" width="40" height="8" rx="2" fill="#111827" opacity="0.6"/>
+
+    <!-- Submit Button -->
+    <rect x="135" y="290" width="130" height="25" rx="12.5" fill="#cf5f3a"/>
+    <rect x="170" y="299" width="60" height="6" rx="3" fill="white"/>
+    
+    <!-- Notch -->
+    <path d="M 170 40 L 230 40 A 0 0 0 0 1 230 40 L 230 55 A 10 10 0 0 1 220 65 L 180 65 A 10 10 0 0 1 170 55 Z" fill="#111827"/>
+</svg>

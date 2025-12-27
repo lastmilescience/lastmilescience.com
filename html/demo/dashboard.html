@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Last Mile Science - Program Manager Dashboard</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Dashboard CSS -->
+    <link href="dashboard.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Side Navigation -->
+        <aside class="sidebar">
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <!-- Brand -->
+                <div class="brand">
+                    <h1>Last Mile Science</h1>
+                    <p>Program Manager</p>
+                </div>
+                <!-- Navigation Links -->
+                <nav class="nav-links">
+                    <a class="nav-item" href="#" id="link-chws">
+                        <span class="material-symbols-outlined">groups</span>
+                        <span class="label">CHWs</span>
+                    </a>
+                    <!-- Active State -->
+                    <a class="nav-item active" href="#" id="link-patients">
+                        <span class="material-symbols-outlined">person</span>
+                        <span class="label">Patients</span>
+                    </a>
+                </nav>
+            </div>
+            <!-- Bottom Settings -->
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <a class="nav-item" href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <span class="label">Settings</span>
+                </a>
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div class="user-info">
+                        <span class="user-name">Jane Doe</span>
+                        <span class="user-role">Manager</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Mobile Header placeholder -->
+            <div class="mobile-header">
+                <h1>Last Mile Science</h1>
+                <button style="background:none; border:none; cursor:pointer; color: var(--text-main);">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+
+            <div class="content-wrapper">
+                <div id="section-patients" class="dashboard-section">
+                    <!-- Page Heading & Actions -->
+                    <div class="page-header">
+                        <div class="header-title">
+                            <h2>Patient Overview (DEMO)</h2>
+                            <p>Monitor patient health trends and demographics across regions.</p>
+                        </div>
+                        <div class="header-actions">
+                            <button class="btn btn-outline">
+                                <span class="material-symbols-outlined btn-icon">calendar_today</span>
+                                Current Year
+                            </button>
+                            <button class="btn btn-primary">
+                                <span class="material-symbols-outlined btn-icon">download</span>
+                                Export Data
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Filters Bar -->
+                    <div class="filters-bar">
+                        <button class="filter-btn active">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 18px; margin-right: 6px;">filter_list</span>
+                            All Regions
+                        </button>
+                        <button class="filter-btn default">
+                            Status: All
+                            <span class="material-symbols-outlined"
+                                style="font-size: 16px; margin-left: 4px;">expand_more</span>
+                        </button>
+                        <button class="filter-btn default">
+                            Illness Type
+                            <span class="material-symbols-outlined"
+                                style="font-size: 16px; margin-left: 4px;">expand_more</span>
+                        </button>
+                        <div class="search-wrapper">
+                            <span class="material-symbols-outlined search-icon">search</span>
+                            <input class="search-input" placeholder="Search patient ID..." type="text" />
+                        </div>
+                    </div>
+
+                    <!-- KPI Stats -->
+                    <div class="stats-grid">
+                        <!-- Stat Card 1 -->
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <p>Total Patients</p>
+                                <span class="material-symbols-outlined stat-icon icon-primary">groups</span>
+                            </div>
+                            <p class="stat-value">1,248</p>
+                            <div class="stat-trend trend-up">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">trending_up</span>
+                                +5% <span class="trend-text">from last month</span>
+                            </div>
+                        </div>
+                        <!-- Stat Card 2 -->
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <p>Active Treatments</p>
+                                <span class="material-symbols-outlined stat-icon icon-blue">vital_signs</span>
+                            </div>
+                            <p class="stat-value">342</p>
+                            <div class="stat-trend trend-up">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">trending_up</span>
+                                +2% <span class="trend-text">from last month</span>
+                            </div>
+                        </div>
+                        <!-- Stat Card 3 -->
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <p>Recovery Rate</p>
+                                <span class="material-symbols-outlined stat-icon icon-red">emergency</span>
+                            </div>
+                            <p class="stat-value">92%</p>
+                            <div class="stat-trend trend-up">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">trending_up</span>
+                                +1% <span class="trend-text">from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visualizations: Map and Chart -->
+                    <div class="dashboard-grid">
+                        <!-- Map Component -->
+                        <div class="card-container">
+                            <div class="card-header">
+                                <h3 class="card-title">Geographic Distribution</h3>
+                                <div class="card-actions">
+                                    <button class="btn-sm"><span class="material-symbols-outlined"
+                                            style="font-size: 18px;">add</span></button>
+                                    <button class="btn-sm"><span class="material-symbols-outlined"
+                                            style="font-size: 18px;">remove</span></button>
+                                </div>
+                            </div>
+                            <div class="map-wrapper">
+                                <!-- Abstract Map Representation -->
+                                <img class="map-bg" data-alt="Top down map view of a rural region with green terrain"
+                                    data-location="Rural Region Map"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9IsKz8HOFluK4XixuhBbkMQxeezE8PBPMivu6OVRkcSlV-kubG9JXTv3VkGATb-xCHbppIxGdKnUCxYaL8UW3jj3Y_v6zpPh3QLvAJ2jL6ISJL5KI_sawI56h4unPLVsBYofzDJrpUB-ul7qAr2GWBtpG5o1Q5s9AGUyNIDlQXvByPCxlFatnc2iOgX1_TJjcDFDQQisCbg_jAUtSZ0Q5iLh58trnf2dr1usimHOI4Elt9w0TJpVzKOtFGbNco4u62s_xuZLvR0" />
+                                <!-- Map Pins -->
+                                <div class="map-marker" style="top: 33%; left: 25%;">
+                                    <div class="marker-dot-pulse"></div>
+                                    <div class="marker-tooltip">Village A: 45 Cases</div>
+                                </div>
+                                <div class="map-marker" style="top: 50%; left: 50%;">
+                                    <div class="marker-dot-red">12</div>
+                                    <div class="marker-tooltip">Village B: Outbreak Alert</div>
+                                </div>
+                                <div class="map-marker" style="bottom: 33%; right: 25%;">
+                                    <div class="marker-dot-blue"></div>
+                                </div>
+                                <div class="map-marker" style="top: 25%; right: 33%;">
+                                    <div class="marker-dot-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Donut Chart Component -->
+                        <div class="card-container">
+                            <div class="card-header">
+                                <h3 class="card-title">Distribution by Illness</h3>
+                            </div>
+                            <div class="chart-body">
+                                <!-- CSS Donut Chart -->
+                                <div class="donut-ring">
+                                    <div class="donut-center">
+                                        <span>Total Cases</span>
+                                        <span>342</span>
+                                    </div>
+                                </div>
+                                <!-- Legend -->
+                                <div class="chart-legend">
+                                    <div class="legend-item">
+                                        <div class="legend-dot bg-primary"></div>
+                                        <p class="legend-text">Malaria (45%)</p>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-dot bg-blue"></div>
+                                        <p class="legend-text">Malnutrition (25%)</p>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-dot bg-red"></div>
+                                        <p class="legend-text">Pneumonia (15%)</p>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-dot bg-amber"></div>
+                                        <p class="legend-text">Other (15%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Patients Table -->
+                    <div class="card-container">
+                        <div class="card-header bg-gray">
+                            <h3 class="card-title">Recent Visits</h3>
+                            <button class="view-all-link">View All</button>
+                        </div>
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Patient ID</th>
+                                        <th>Name</th>
+                                        <th>Village</th>
+                                        <th>Diagnosis</th>
+                                        <th>CHW Assigned</th>
+                                        <th>Status</th>
+                                        <th>Last Visit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-medium">#PT-8832</td>
+                                        <td>Amara K.</td>
+                                        <td class="text-secondary">Kumbha</td>
+                                        <td>Malaria</td>
+                                        <td class="text-secondary">
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-blue">SJ</div>
+                                                Sarah J.
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-stable">Stable</span>
+                                        </td>
+                                        <td class="text-secondary">Oct 24, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">#PT-8833</td>
+                                        <td>Muhamed M.</td>
+                                        <td class="text-secondary">North Ridge</td>
+                                        <td>Pneumonia</td>
+                                        <td class="text-secondary">
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-orange">HK</div>
+                                                Hauwa K.
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-monitoring">Monitoring</span>
+                                        </td>
+                                        <td class="text-secondary">Oct 24, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">#PT-8834</td>
+                                        <td>Elina R.</td>
+                                        <td class="text-secondary">Kumbha</td>
+                                        <td>Pneumonia</td>
+                                        <td class="text-secondary">
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-blue">SJ</div>
+                                                Sarah J.
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-critical">Critical</span>
+                                        </td>
+                                        <td class="text-secondary">Oct 23, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">#PT-8835</td>
+                                        <td>Joseph B.</td>
+                                        <td class="text-secondary">Valley East</td>
+                                        <td>Malaria</td>
+                                        <td class="text-secondary">
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-purple">UA</div>
+                                                Usman A.
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-stable">Stable</span>
+                                        </td>
+                                        <td class="text-secondary">Oct 22, 2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> <!-- End section-patients -->
+
+                <!-- CHW Section -->
+                <div id="section-chws" class="dashboard-section" style="display: none;">
+                    <!-- Page Heading -->
+                    <div class="page-header">
+                        <div class="header-title">
+                            <h2>CHW Overview (DEMO)</h2>
+                            <p>Performance metrics and regional distribution of Community Health Workers.</p>
+                        </div>
+
+                        <div class="header-actions">
+                            <button class="btn btn-primary">
+                                <span class="material-symbols-outlined btn-icon">add</span>
+                                Add CHW
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Filters Bar -->
+                    <div class="filters-bar">
+                        <button class="filter-btn active">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 18px; margin-right: 6px;">filter_list</span>
+                            All Regions
+                        </button>
+                        <button class="filter-btn default">
+                            Status: Active
+                            <span class="material-symbols-outlined"
+                                style="font-size: 16px; margin-left: 4px;">expand_more</span>
+                        </button>
+                        <div class="search-wrapper">
+                            <span class="material-symbols-outlined search-icon">search</span>
+                            <input class="search-input" placeholder="Search CHW..." type="text" />
+                        </div>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <p>Total CHWs</p>
+                                <span class="material-symbols-outlined stat-icon icon-primary">groups</span>
+                            </div>
+                            <p class="stat-value">48</p>
+                            <div class="stat-trend trend-up">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">trending_up</span>
+                                +12% <span class="trend-text">from last month</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <p>Avg Patients / CHW</p>
+                                <span class="material-symbols-outlined stat-icon icon-blue">person</span>
+                            </div>
+                            <p class="stat-value">26</p>
+                            <div class="stat-trend trend-down">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">trending_down</span>
+                                -3% <span class="trend-text">from target</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <p>Recovery Rate</p>
+                                <span class="material-symbols-outlined stat-icon icon-red">vital_signs</span>
+                            </div>
+                            <p class="stat-value">92%</p>
+                            <div class="stat-trend trend-up">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">trending_up</span>
+                                +1% <span class="trend-text">from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visualizations -->
+                    <div class="dashboard-grid">
+                        <!-- Map Component -->
+                        <div class="card-container">
+                            <div class="card-header">
+                                <h3 class="card-title">Regional Assignments</h3>
+                            </div>
+                            <div class="map-wrapper">
+                                <img class="map-bg"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9IsKz8HOFluK4XixuhBbkMQxeezE8PBPMivu6OVRkcSlV-kubG9JXTv3VkGATb-xCHbppIxGdKnUCxYaL8UW3jj3Y_v6zpPh3QLvAJ2jL6ISJL5KI_sawI56h4unPLVsBYofzDJrpUB-ul7qAr2GWBtpG5o1Q5s9AGUyNIDlQXvByPCxlFatnc2iOgX1_TJjcDFDQQisCbg_jAUtSZ0Q5iLh58trnf2dr1usimHOI4Elt9w0TJpVzKOtFGbNco4u62s_xuZLvR0" />
+                                <!-- Highlights -->
+                                <div class="region-highlight" style="top: 30%; left: 30%; width: 100px; height: 100px;">
+                                    <div class="marker-tooltip">
+                                        <strong>Kumbha</strong><br>
+                                        2 CHWs • 18 Patients
+                                    </div>
+                                </div>
+                                <div class="region-highlight" style="top: 60%; left: 60%; width: 120px; height: 120px;">
+                                    <div class="marker-tooltip">
+                                        <strong>Valley East</strong><br>
+                                        1 CHW • 8 Patients
+                                    </div>
+                                </div>
+                                <div class="region-highlight"
+                                    style="bottom: 25%; right: 10%; width: 80px; height: 80px;">
+                                    <div class="marker-tooltip">
+                                        <strong>North Ridge</strong><br>
+                                        1 CHW • 15 Patients
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bar Chart Component -->
+                        <div class="card-container">
+                            <div class="card-header">
+                                <h3 class="card-title">Recovery Rate by CHW</h3>
+                            </div>
+                            <div class="bar-chart-container">
+                                <div class="bar-row">
+                                    <span class="bar-label">Sarah J.</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" style="width: 98%;"></div>
+                                    </div>
+                                    <span class="bar-value">98%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Usman A.</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" style="width: 96%;"></div>
+                                    </div>
+                                    <span class="bar-value">96%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Hauwa K.</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" style="width: 94%;"></div>
+                                    </div>
+                                    <span class="bar-value">94%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Amara B.</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" style="width: 91%; background-color: var(--amber-400);">
+                                        </div>
+                                    </div>
+                                    <span class="bar-value">91%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">John D.</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" style="width: 88%; background-color: var(--red-500);">
+                                        </div>
+                                    </div>
+                                    <span class="bar-value">88%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHW List Table -->
+                    <div class="card-container">
+                        <div class="card-header bg-gray">
+                            <h3 class="card-title">Community Health Workers</h3>
+                            <button class="view-all-link">View All</button>
+                        </div>
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Region</th>
+                                        <th>Active Patients</th>
+                                        <th>Recovery Rate</th>
+                                        <th>Status</th>
+                                        <th>Last Active</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-blue">SJ</div>
+                                                Sarah J.
+                                            </div>
+                                        </td>
+                                        <td class="text-secondary">Kumbha</td>
+                                        <td class="font-medium">12</td>
+                                        <td>
+                                            <span class="status-badge badge-stable">98%</span>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-stable">Active</span>
+                                        </td>
+                                        <td class="text-secondary">Just now</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-purple">UA</div>
+                                                Usman A.
+                                            </div>
+                                        </td>
+                                        <td class="text-secondary">Valley East</td>
+                                        <td class="font-medium">8</td>
+                                        <td>
+                                            <span class="status-badge badge-stable">96%</span>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-stable">Active</span>
+                                        </td>
+                                        <td class="text-secondary">2 mins ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-orange">HK</div>
+                                                Hauwa K.
+                                            </div>
+                                        </td>
+                                        <td class="text-secondary">North Ridge</td>
+                                        <td class="font-medium">15</td>
+                                        <td>
+                                            <span class="status-badge badge-monitoring">94%</span>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-monitoring">Inactive</span>
+                                        </td>
+                                        <td class="text-secondary">15 mins ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-blue">AB</div>
+                                                Amara B.
+                                            </div>
+                                        </td>
+                                        <td class="text-secondary">Kumbha</td>
+                                        <td class="font-medium">6</td>
+                                        <td>
+                                            <span class="status-badge badge-monitoring">91%</span>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-stable">Active</span>
+                                        </td>
+                                        <td class="text-secondary">1 hour ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell">
+                                                <div class="user-initials ui-purple">JD</div>
+                                                John D.
+                                            </div>
+                                        </td>
+                                        <td class="text-secondary">South Ridge</td>
+                                        <td class="font-medium">4</td>
+                                        <td>
+                                            <span class="status-badge badge-critical">88%</span>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge badge-critical">Offline</span>
+                                        </td>
+                                        <td class="text-secondary">2 days ago</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navItems = document.querySelectorAll('.nav-item');
+            const sections = document.querySelectorAll('.dashboard-section');
+
+            function showSection(sectionId) {
+                sections.forEach(sec => {
+                    if (sec.id === sectionId) {
+                        sec.style.removeProperty('display');
+                    } else {
+                        sec.style.display = 'none';
+                    }
+                });
+
+                // Update active nav
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    // Reset icon variation
+                    const icon = item.querySelector('.material-symbols-outlined');
+                    if (icon) icon.style.fontVariationSettings = "'FILL' 0";
+                });
+
+                let activeId = '';
+                if (sectionId === 'section-patients') activeId = 'link-patients';
+                else if (sectionId === 'section-chws') activeId = 'link-chws';
+                else activeId = 'link-dashboard';
+
+                const activeLink = document.getElementById(activeId);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                    const icon = activeLink.querySelector('.material-symbols-outlined');
+                    if (icon) icon.style.fontVariationSettings = "'FILL' 1";
+                }
+            }
+
+            document.getElementById('link-patients').addEventListener('click', (e) => {
+                e.preventDefault();
+                showSection('section-patients');
+            });
+
+            document.getElementById('link-chws').addEventListener('click', (e) => {
+                e.preventDefault();
+                showSection('section-chws');
+            });
+
+            document.getElementById('link-dashboard').addEventListener('click', (e) => {
+                e.preventDefault();
+                showSection('section-patients'); // Default to patients for now
+            });
+        });
+    </script>
+</body>
+
+</html>

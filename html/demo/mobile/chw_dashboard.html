@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CHW Dashboard</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="app-header">
+        <div class="flex items-center gap-4">
+            <div class="relative shrink-0">
+                <div class="profile-avatar" data-alt="Portrait of a female community health worker from Nigeria smiling"
+                    style="background-image: url('sarah_avatar.png');">
+                </div>
+                <div class="status-dot"></div>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="user-name">Sarah</h1>
+                <div class="user-status">
+                    <span class="material-symbols-outlined icon-xs text-accent-green">wifi</span>
+                    <span>Online</span>
+                </div>
+            </div>
+        </div>
+        <button class="audio-btn">
+            <span class="material-symbols-outlined audio-icon">volume_up</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="action-grid">
+            <!-- Start New Patient Card -->
+            <a href="start_new_consultation.html" style="text-decoration: none;">
+                <button class="card card-primary card-start-patient demo-hint">
+                    <div class="tap-indicator" style="top: -0.75rem;">
+                        <span class="material-symbols-outlined" style="font-size: 14px;">touch_app</span>
+                        Tap
+                    </div>
+                    <div class="decorative-circle"></div>
+
+                    <div class="card-icon-bg">
+                        <span class="material-symbols-outlined icon-xl text-white">person_add</span>
+                    </div>
+                    <div class="flex flex-col flex-1 relative z-10">
+                        <span class="card-title">Start New<br />Patient</span>
+                    </div>
+                    <div class="card-audio-btn">
+                        <span class="material-symbols-outlined audio-icon icon-sm text-white">volume_up</span>
+                    </div>
+                </button>
+            </a>
+
+            <!-- View Patients Card -->
+            <button class="card card-secondary card-view-patients">
+                <div class="card-icon-bg">
+                    <span class="material-symbols-outlined icon-xl text-accent-purple">groups</span>
+                </div>
+                <div class="flex flex-col flex-1">
+                    <span class="card-title">View<br />Patients</span>
+                </div>
+                <div class="card-audio-btn">
+                    <span class="material-symbols-outlined audio-icon icon-sm text-slate-400">volume_up</span>
+                </div>
+            </button>
+
+            <!-- Recent Activities Card -->
+            <button class="card card-secondary card-recent">
+                <div class="card-icon-bg">
+                    <span class="material-symbols-outlined icon-xl text-accent-orange">history</span>
+                </div>
+                <div class="flex flex-col flex-1">
+                    <span class="card-title">Recent<br />Activities</span>
+                </div>
+                <div class="card-audio-btn">
+                    <span class="material-symbols-outlined audio-icon icon-sm text-slate-400">volume_up</span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="section-header">
+                <span class="material-symbols-outlined icon-md text-slate-500">bar_chart</span>
+                <h2 class="section-title">Today</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card stat-urgent">
+                    <span class="material-symbols-outlined icon-lg text-accent-orange">emergency</span>
+                    <p class="stat-value">3</p>
+                </div>
+                <div class="stat-card stat-completed">
+                    <span class="material-symbols-outlined icon-lg text-primary">check_circle</span>
+                    <p class="stat-value">12</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="nav-container">
+            <button class="nav-btn active">
+                <div class="nav-btn-home-bg">
+                    <span class="material-symbols-outlined icon-lg text-primary">home</span>
+                </div>
+            </button>
+            <button class="nav-btn">
+                <span class="material-symbols-outlined icon-lg text-slate-400">search</span>
+            </button>
+            <button class="nav-btn">
+                <span class="material-symbols-outlined icon-lg text-slate-400">calendar_month</span>
+            </button>
+        </div>
+    </div>
+    <div class="h-6"></div>
+
+</body>
+
+</html>

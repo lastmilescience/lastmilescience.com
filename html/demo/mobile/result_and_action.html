@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Diagnosis Result</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Override body padding for result page */
+        body {
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="result-page">
+    <!-- Header -->
+    <header class="result-header">
+        <a href="malnutrition_screening_form.html" style="text-decoration: none;">
+            <button class="result-header-btn" aria-label="Go back">
+                <span class="material-symbols-outlined icon-lg">arrow_back</span>
+            </button>
+        </a>
+        <div class="result-header-center">
+            <h2 class="result-header-title">Diagnosis</h2>
+        </div>
+        <button class="result-header-btn primary">
+            <span class="material-symbols-outlined icon-lg">help</span>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="result-main">
+        <!-- Patient Info Bar -->
+        <section class="patient-info-bar">
+            <div class="patient-avatar" data-alt="Portrait of a young child patient"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAe_QDY6JItraPO20tWoEfyRt9XVniL5PvicIOxoSgz12XuXmRUuUw0Y-CUwKip-5wUnB11Mw7jVhGPMFb2U4JtXizodyHbZuMeTjVIa7ivl3igkumkgUSxeznBAbgGk0C7NK4D98WuW1VC-ugnMk2xlOHMmdbij9sV7gpjfD5ai1-SMZinK0k0hcMzBnwqnWKY2rnG-74PYDbGvN8vxPE1OasW7HIL579XNMRFIFvDbo3aNU7YSVLe0tIkbdN5cWZNiw2oaGpn55g");'>
+            </div>
+            <div class="patient-info">
+                <p class="patient-name">Amani Ochieng</p>
+                <p class="patient-details">18 Months • Kivu Village</p>
+            </div>
+            <button class="patient-audio-btn">
+                <span class="material-symbols-outlined">volume_up</span>
+            </button>
+        </section>
+
+        <!-- Diagnosis Alert -->
+        <section class="diagnosis-alert">
+            <div class="diagnosis-alert-bg"></div>
+            <div class="diagnosis-alert-content">
+                <div class="diagnosis-alert-icon">
+                    <span class="material-symbols-outlined" style="font-size: 64px; line-height: 1;">warning</span>
+                </div>
+                <h1 class="diagnosis-alert-title">Severe</h1>
+                <p class="diagnosis-alert-subtitle">Malnutrition</p>
+                <button class="diagnosis-play-btn">
+                    <span class="material-symbols-outlined icon-md">volume_up</span>
+                    <span class="diagnosis-play-btn-text">Play Diagnosis</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Measurement Grid -->
+        <section class="result-measurement-grid">
+            <div class="result-measurement-card full-width danger-border">
+                <div class="result-measurement-left">
+                    <div class="result-measurement-icon-bg">
+                        <span class="material-symbols-outlined text-white icon-md">straighten</span>
+                    </div>
+                    <div>
+                        <p class="result-measurement-label">MUAC (Arm)</p>
+                        <p class="result-measurement-value">11.2 <span>cm</span></p>
+                    </div>
+                </div>
+                <div class="result-measurement-badge">Red</div>
+            </div>
+            <div class="result-measurement-card warning-border">
+                <span class="material-symbols-outlined icon-lg icon-warning">monitor_weight</span>
+                <p class="result-measurement-value" style="font-size: 1.125rem;">6.5 kg</p>
+            </div>
+            <div class="result-measurement-card neutral-border">
+                <span class="material-symbols-outlined icon-lg icon-primary">fluid</span>
+                <p class="result-measurement-value" style="font-size: 1.125rem;">Swelling +</p>
+            </div>
+        </section>
+
+        <!-- Actions Section -->
+        <section class="actions-section">
+            <div class="actions-header">
+                <h3 class="actions-title">Required Actions</h3>
+                <span class="actions-badge">URGENT</span>
+            </div>
+
+            <!-- Refer to Clinic Button -->
+            <button class="action-btn danger">
+                <div class="action-btn-icon">
+                    <span class="material-symbols-outlined" style="font-size: 40px;">ambulance</span>
+                </div>
+                <div class="action-btn-content">
+                    <p class="action-btn-title">Refer to Clinic</p>
+                    <p class="action-btn-subtitle">Arrange transport now</p>
+                </div>
+                <div class="action-btn-audio">
+                    <span class="material-symbols-outlined icon-md">volume_up</span>
+                </div>
+            </button>
+
+            <!-- Give Medicine Button -->
+            <button class="action-btn secondary">
+                <div class="action-btn-icon">
+                    <span class="material-symbols-outlined" style="font-size: 40px;">medication</span>
+                </div>
+                <div class="action-btn-content">
+                    <p class="action-btn-title">Give Medicine</p>
+                    <p class="action-btn-subtitle">Antibiotics &amp; Test dose</p>
+                </div>
+                <div class="action-btn-audio">
+                    <span class="material-symbols-outlined icon-md">volume_up</span>
+                </div>
+            </button>
+        </section>
+    </main>
+</body>
+
+</html>

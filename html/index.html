@@ -63,13 +63,13 @@
                 <!-- <span>Last Mile Science</span> -->
             </a>
             <div class="nav-links">
-                <a href="demo.html" class="btn btn-primary">Demo</a>
+                <a href="demo/index.html" class="btn btn-primary">Demo</a>
             </div>
         </div>
     </nav>
     <header class="hero">
         <div class="hero-bg">
-            <img alt="Scientific research in the field" src="resources/site.png" />
+            <img id="hero-parallax" alt="Scientific research in the field" src="resources/site.png" />
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content container">
@@ -214,6 +214,20 @@
             </p>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const parallax = document.getElementById('hero-parallax');
+            if (parallax) {
+                const scrolled = window.pageYOffset;
+                // Only animate while the hero section is in or near the viewport
+                if (scrolled < window.innerHeight * 1.5) {
+                    window.requestAnimationFrame(() => {
+                        parallax.style.transform = `translate3d(0, ${scrolled * 0.3}px, 0)`;
+                    });
+                }
+            }
+        }, { passive: true });
+    </script>
 </body>
 
 </html>

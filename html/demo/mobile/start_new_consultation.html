@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Start New Consultation</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="form-header">
+        <a href="chw_dashboard.html" style="text-decoration: none;">
+            <button class="form-header-btn">
+                <span class="material-symbols-outlined icon-md">arrow_back</span>
+            </button>
+        </a>
+        <h1 class="form-header-title">New Patient</h1>
+        <button class="form-header-btn primary">
+            <span class="material-symbols-outlined icon-md">help</span>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="form-main">
+        <!-- Step 1: Who -->
+        <section class="form-section">
+            <div class="form-section-header">
+                <div class="form-section-indicator"></div>
+                <h2 class="form-section-title">Who?</h2>
+                <span class="form-section-step">Step 1 of 2</span>
+            </div>
+
+            <!-- Name Input -->
+            <div class="form-input-group">
+                <div class="form-input-icon">
+                    <span class="material-symbols-outlined icon-xl">person</span>
+                </div>
+                <input class="form-input" placeholder="Name" type="text" value="Amani Ochieng" />
+            </div>
+
+            <!-- Age Input -->
+            <div class="form-input-group">
+                <div class="form-input-icon">
+                    <span class="material-symbols-outlined icon-xl">cake</span>
+                </div>
+                <input class="form-input" placeholder="Age" type="number" value="4" />
+                <div class="age-unit-group">
+                    <label class="age-unit-toggle">
+                        <input checked="" name="age_unit" type="radio" value="years" />
+                        <span class="age-unit-label">Yrs</span>
+                    </label>
+                    <label class="age-unit-toggle">
+                        <input name="age_unit" type="radio" value="months" />
+                        <span class="age-unit-label">Mos</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="gender-grid">
+                <label class="gender-card">
+                    <input checked="" name="gender" type="radio" value="male" />
+                    <div class="gender-card-content">
+                        <span class="material-symbols-outlined gender-card-icon">man</span>
+                        <span class="gender-card-label">Male</span>
+                    </div>
+                    <div class="gender-card-check">
+                        <span class="material-symbols-outlined icon-lg">check_circle</span>
+                    </div>
+                </label>
+                <label class="gender-card">
+                    <input name="gender" type="radio" value="female" />
+                    <div class="gender-card-content">
+                        <span class="material-symbols-outlined gender-card-icon">woman</span>
+                        <span class="gender-card-label">Female</span>
+                    </div>
+                    <div class="gender-card-check">
+                        <span class="material-symbols-outlined icon-lg">check_circle</span>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <div class="form-divider"></div>
+
+        <!-- Step 2: Why -->
+        <section class="form-section">
+            <div class="form-section-header">
+                <div class="form-section-indicator"></div>
+                <h2 class="form-section-title">Why?</h2>
+                <span class="form-section-step">Step 2 of 2</span>
+            </div>
+
+            <!-- Featured Pathway: Malnutrition -->
+            <label class="pathway-featured">
+                <input checked="" name="pathway" type="radio" value="malnutrition" />
+                <div class="pathway-featured-content">
+                    <button class="pathway-audio-btn" onclick="event.preventDefault();" type="button">
+                        <span class="material-symbols-outlined icon-lg">volume_up</span>
+                    </button>
+                    <div class="pathway-featured-inner">
+                        <div class="pathway-featured-icon">
+                            <span class="material-symbols-outlined" style="font-size: 72px;">nutrition</span>
+                        </div>
+                        <h3 class="pathway-featured-title">Malnutrition</h3>
+                        <p class="pathway-featured-desc">Check MUAC &amp; swelling</p>
+                    </div>
+                </div>
+                <div class="pathway-featured-check">
+                    <span class="material-symbols-outlined icon-xl">check_circle</span>
+                </div>
+            </label>
+
+            <!-- Pathway Grid -->
+            <div class="pathway-grid">
+                <label class="pathway-card">
+                    <input name="pathway" type="radio" value="malaria" />
+                    <div class="pathway-card-border"></div>
+                    <div class="pathway-card-icon orange">
+                        <span class="material-symbols-outlined icon-xl">coronavirus</span>
+                    </div>
+                    <span class="pathway-card-title">Malaria</span>
+                    <div class="pathway-card-check">
+                        <span class="material-symbols-outlined icon-md">check_circle</span>
+                    </div>
+                </label>
+                <label class="pathway-card">
+                    <input name="pathway" type="radio" value="pneumonia" />
+                    <div class="pathway-card-border"></div>
+                    <div class="pathway-card-icon blue">
+                        <span class="material-symbols-outlined icon-xl">pulmonology</span>
+                    </div>
+                    <span class="pathway-card-title">Pneumonia</span>
+                    <div class="pathway-card-check">
+                        <span class="material-symbols-outlined icon-md">check_circle</span>
+                    </div>
+                </label>
+                <label class="pathway-card">
+                    <input name="pathway" type="radio" value="diarrhea" />
+                    <div class="pathway-card-border"></div>
+                    <div class="pathway-card-icon yellow">
+                        <span class="material-symbols-outlined icon-xl">water_drop</span>
+                    </div>
+                    <span class="pathway-card-title">Diarrhea</span>
+                    <div class="pathway-card-check">
+                        <span class="material-symbols-outlined icon-md">check_circle</span>
+                    </div>
+                </label>
+                <label class="pathway-card">
+                    <input name="pathway" type="radio" value="general" />
+                    <div class="pathway-card-border"></div>
+                    <div class="pathway-card-icon purple">
+                        <span class="material-symbols-outlined icon-xl">medical_services</span>
+                    </div>
+                    <span class="pathway-card-title">General</span>
+                    <div class="pathway-card-check">
+                        <span class="material-symbols-outlined icon-md">check_circle</span>
+                    </div>
+                </label>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="form-footer">
+        <a href="malnutrition_screening_form.html" style="text-decoration: none; width: 100%; position: relative;">
+            <div class="tap-indicator" style="top: -1.5rem; right: 1rem;">
+                <span class="material-symbols-outlined" style="font-size: 14px;">touch_app</span>
+                Tap
+            </div>
+            <button class="form-submit-btn demo-hint">
+                <span class="form-submit-btn-icon">
+                    <span class="material-symbols-outlined icon-lg">play_arrow</span>
+                </span>
+                <span class="form-submit-btn-text">Start Now</span>
+                <span class="form-submit-btn-icon end">
+                    <span class="material-symbols-outlined icon-lg">arrow_forward</span>
+                </span>
+            </button>
+        </a>
+    </footer>
+</body>
+
+</html>

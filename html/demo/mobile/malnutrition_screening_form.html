@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Malnutrition Screening</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="form-header">
+        <a href="start_new_consultation.html" style="text-decoration: none;">
+            <button class="form-header-btn">
+                <span class="material-symbols-outlined icon-md">arrow_back</span>
+            </button>
+        </a>
+        <div class="form-header-center">
+            <h1 class="form-header-title">Screening</h1>
+            <span class="form-header-subtitle">Child: Amani O.</span>
+        </div>
+        <button class="form-header-btn primary">
+            <span class="material-symbols-outlined icon-md">volume_up</span>
+        </button>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 33%;"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="form-main">
+        <!-- Info Banner -->
+        <div class="info-banner">
+            <div class="info-banner-icon">
+                <span class="material-symbols-outlined icon-md">info</span>
+            </div>
+            <p class="info-banner-text">
+                Follow the audio instructions. Enter measurements or tap images.
+            </p>
+        </div>
+
+        <!-- MUAC Card -->
+        <div class="muac-card">
+            <div class="muac-card-header">
+                <div class="muac-card-header-left">
+                    <div class="muac-card-icon">
+                        <span class="material-symbols-outlined icon-md">straighten</span>
+                    </div>
+                    <h2 class="muac-card-title">MUAC</h2>
+                </div>
+                <button class="muac-audio-btn">
+                    <span class="material-symbols-outlined icon-md">volume_up</span>
+                </button>
+            </div>
+            <div class="muac-card-body">
+                <!-- MUAC Display -->
+                <div class="muac-display">
+                    <span class="muac-display-value">11.2</span>
+                    <span class="muac-display-unit">cm</span>
+                    <div class="muac-display-cursor"></div>
+                </div>
+
+                <!-- MUAC Scale -->
+                <div class="muac-scale-container">
+                    <div class="muac-scale">
+                        <div class="muac-scale-sam">
+                            <span class="muac-scale-label">SAM</span>
+                        </div>
+                        <div class="muac-scale-mam">
+                            <span class="muac-scale-label">MAM</span>
+                        </div>
+                        <div class="muac-scale-normal">
+                            <span class="muac-scale-label">Normal</span>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="muac-result-badge danger">
+                            <span class="material-symbols-outlined" style="font-size: 16px;">warning</span>
+                            Severe Acute Malnutrition
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Numpad -->
+                <div class="numpad-grid">
+                    <button class="numpad-key">1</button>
+                    <button class="numpad-key">2</button>
+                    <button class="numpad-key">3</button>
+                    <button class="numpad-key">4</button>
+                    <button class="numpad-key">5</button>
+                    <button class="numpad-key">6</button>
+                    <button class="numpad-key">7</button>
+                    <button class="numpad-key">8</button>
+                    <button class="numpad-key">9</button>
+                    <button class="numpad-key">.</button>
+                    <button class="numpad-key">0</button>
+                    <button class="numpad-key delete">
+                        <span class="material-symbols-outlined">backspace</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weight Card -->
+        <div class="measurement-card">
+            <div class="measurement-card-left">
+                <div class="measurement-card-icon">
+                    <span class="material-symbols-outlined icon-md">monitor_weight</span>
+                </div>
+                <div>
+                    <h2 class="measurement-card-title">Weight</h2>
+                    <p class="measurement-card-subtitle">Tap to enter</p>
+                </div>
+            </div>
+            <div class="measurement-card-value">--.- kg</div>
+        </div>
+
+        <!-- Height Card -->
+        <div class="measurement-card">
+            <div class="measurement-card-left">
+                <div class="measurement-card-icon">
+                    <span class="material-symbols-outlined icon-md">height</span>
+                </div>
+                <div>
+                    <h2 class="measurement-card-title">Height</h2>
+                    <p class="measurement-card-subtitle">Tap to enter</p>
+                </div>
+            </div>
+            <div class="measurement-card-value">-- cm</div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- Clinical Signs Section -->
+        <div>
+            <h2 class="clinical-section-title">Clinical Signs</h2>
+
+            <!-- Edema Card -->
+            <div class="clinical-card">
+                <div class="clinical-card-header">
+                    <div class="clinical-card-header-left">
+                        <div class="clinical-card-icon blue">
+                            <span class="material-symbols-outlined icon-md">water_drop</span>
+                        </div>
+                        <div>
+                            <h3 class="clinical-card-title">Edema?</h3>
+                            <p class="clinical-card-subtitle">Swollen feet</p>
+                        </div>
+                    </div>
+                    <button class="clinical-audio-btn">
+                        <span class="material-symbols-outlined icon-md">volume_up</span>
+                    </button>
+                </div>
+                <div class="clinical-card-body">
+                    <div class="clinical-options-grid">
+                        <label class="clinical-option">
+                            <input name="edema" type="radio" />
+                            <div class="clinical-option-content yes">
+                                <div class="clinical-option-icon red">
+                                    <span class="material-symbols-outlined icon-lg">coronavirus</span>
+                                </div>
+                                <span class="clinical-option-label">YES</span>
+                                <span class="clinical-option-sublabel">Swollen</span>
+                            </div>
+                        </label>
+                        <label class="clinical-option">
+                            <input checked="" name="edema" type="radio" />
+                            <div class="clinical-option-content no">
+                                <div class="clinical-option-icon green">
+                                    <span class="material-symbols-outlined icon-lg">check_circle</span>
+                                </div>
+                                <span class="clinical-option-label">NO</span>
+                                <span class="clinical-option-sublabel">Normal</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appetite Card -->
+            <div class="clinical-card">
+                <div class="clinical-card-header">
+                    <div class="clinical-card-header-left">
+                        <div class="clinical-card-icon orange">
+                            <span class="material-symbols-outlined icon-md">restaurant</span>
+                        </div>
+                        <div>
+                            <h3 class="clinical-card-title">Appetite?</h3>
+                            <p class="clinical-card-subtitle">Can eat RUTF</p>
+                        </div>
+                    </div>
+                    <button class="clinical-audio-btn">
+                        <span class="material-symbols-outlined icon-md">volume_up</span>
+                    </button>
+                </div>
+                <div class="clinical-card-body">
+                    <div class="clinical-options-grid">
+                        <label class="clinical-option">
+                            <input checked="" name="appetite" type="radio" />
+                            <div class="clinical-option-content good">
+                                <div class="clinical-option-icon green">
+                                    <span class="material-symbols-outlined icon-lg">thumb_up</span>
+                                </div>
+                                <span class="clinical-option-label">GOOD</span>
+                            </div>
+                        </label>
+                        <label class="clinical-option">
+                            <input name="appetite" type="radio" />
+                            <div class="clinical-option-content poor">
+                                <div class="clinical-option-icon red">
+                                    <span class="material-symbols-outlined icon-lg">thumb_down</span>
+                                </div>
+                                <span class="clinical-option-label">POOR</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="form-footer">
+        <div class="form-footer-content">
+            <a href="start_new_consultation.html" style="text-decoration: none;">
+                <button class="form-back-btn">
+                    <span class="material-symbols-outlined icon-lg">arrow_back</span>
+                </button>
+            </a>
+            <a href="result_and_action.html"
+                style="text-decoration: none; flex: 1; position: relative; display: flex; justify-content: flex-end;">
+                <div class="tap-indicator" style="top: -1.5rem; right: 0;">
+                    <span class="material-symbols-outlined" style="font-size: 14px;">touch_app</span>
+                    Tap
+                </div>
+                <button class="form-next-btn demo-hint" style="flex: none; width: auto; padding: 0 1.5rem;">
+                    <span>NEXT</span>
+                    <span class="material-symbols-outlined icon-lg">arrow_forward</span>
+                </button>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -2,7 +2,6 @@
 (function () {
     'use strict';
 
-    // Password hash (SHA-256 of "demo2024")
     const VALID_PASSWORD_HASH = 'f27a9e716283166ceac7f7cbcc5d28b8eeb5f8e55bccb8b9770439be2114606b';
     const SESSION_KEY = 'demo_authenticated';
     const SESSION_DURATION = 24 * 60 * 60 * 1000; // 24 hours

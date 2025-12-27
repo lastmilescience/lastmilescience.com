@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.3 (0e150ed, 2023-07-21)"
-   sodipodi:docname="lastmilescience_logo.svg"
+   sodipodi:docname="lastmilescience_logo_light_no_background.svg"
    inkscape:export-filename="hrmerrill_logo.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -27,44 +27,34 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      inkscape:zoom="3.8217396"
-     inkscape:cx="57.9579"
+     inkscape:cx="58.219561"
      inkscape:cy="64.891915"
      inkscape:window-width="1472"
      inkscape:window-height="891"
      inkscape:window-x="0"
      inkscape:window-y="37"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="layer3" />
   <defs
      id="defs1" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Base">
-    <rect
-       style="fill:#f8f6f6;fill-opacity:1;stroke:none;stroke-width:0.206416;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       id="rect1"
-       width="33.866665"
-       height="33.866665"
-       x="0"
-       y="-1.110223e-16"
-       ry="6.34097"
-       rx="5.9948153" />
-  </g>
+     inkscape:label="Base" />
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Because">
     <path
-       style="fill:none;fill-opacity:1;stroke:#121212;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       style="fill:none;fill-opacity:1;stroke:#f8f6f6;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        d="m 12.284727,27.103009 a 5.0960626,5.0960634 0 0 0 5.096039,-5.096063 5.0960626,5.0960634 0 0 0 -5.096039,-5.096033 5.0960626,5.0960634 0 0 0 -5.0960309,5.096033 5.0960626,5.0960634 0 0 0 5.0960309,5.096063 z"
        id="path1-0" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#121212;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       style="fill:none;fill-opacity:1;stroke:#f8f6f6;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        d="m 17.650933,17.844153 a 5.0960626,5.0960634 0 0 0 5.096063,-5.09606 5.0960626,5.0960634 0 0 0 -5.096063,-5.0960635 5.0960626,5.0960634 0 0 0 -5.096041,5.0960635 5.0960626,5.0960634 0 0 0 5.096041,5.09606 z"
        id="path1-8-5" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#121212;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       style="fill:none;fill-opacity:1;stroke:#f8f6f6;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        d="M 6.978673,17.844093 A 5.0960626,5.0960634 0 0 0 12.074699,12.748034 5.0960626,5.0960634 0 0 0 6.978673,7.6519707 5.0960626,5.0960634 0 0 0 1.882638,12.748034 5.0960626,5.0960634 0 0 0 6.978673,17.844093 Z"
        id="path1-2-6" />
   </g>
@@ -73,15 +63,15 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#121212;fill-opacity:1;stroke:#121212;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#f8f6f6;fill-opacity:1;stroke:#f8f6f6;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1"
        d="m 21.553559,7.6520059 a 5.0960626,5.0960634 0 0 0 -5.09609,5.0960631 5.0960626,5.0960634 0 0 0 5.09609,5.09606 5.0960626,5.0960634 0 0 0 5.096083,-5.09606 5.0960626,5.0960634 0 0 0 -5.096083,-5.0960631 z"
        id="path1" />
     <path
-       style="fill:#121212;fill-opacity:1;stroke:#121212;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#f8f6f6;fill-opacity:1;stroke:#f8f6f6;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1"
        d="m 16.272506,16.910858 a 5.0960626,5.0960634 0 0 0 -5.096068,5.096034 5.0960626,5.0960634 0 0 0 5.096068,5.096065 5.0960626,5.0960634 0 0 0 5.096084,-5.096065 5.0960626,5.0960634 0 0 0 -5.096084,-5.096034 z"
        id="path1-8" />
     <path
-       style="fill:#121212;fill-opacity:1;stroke:#121212;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#f8f6f6;fill-opacity:1;stroke:#f8f6f6;stroke-width:1.0;stroke-dasharray:none;stroke-opacity:1"
        d="m 26.859672,16.910913 a 5.0960626,5.0960634 0 0 0 -5.096064,5.096036 5.0960626,5.0960634 0 0 0 5.096064,5.096063 5.0960626,5.0960634 0 0 0 5.096058,-5.096063 5.0960626,5.0960634 0 0 0 -5.096058,-5.096036 z"
        id="path1-2" />
   </g>

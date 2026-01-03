@@ -1,0 +1,16 @@
+{
+  "name": "Last Mile Science",
+  "short_name": "LMS",
+  "description": "Technology for last mile delivery of public health services.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0a192f",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/lastmilescience_logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

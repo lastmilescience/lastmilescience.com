@@ -29,7 +29,11 @@
     <div class="dashboard-container">
         <!-- Side Navigation -->
         <aside class="sidebar">
-            <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <div style="display: flex; flex-direction: column; gap: 2rem; position: relative;">
+                <!-- Mobile Close Button -->
+                <button id="sidebar-close-btn" class="sidebar-close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
                 <!-- Return to Home -->
                 <a href="../index.html" class="nav-item return-home" style="margin-bottom: -1rem;">
                     <span class="material-symbols-outlined">arrow_back</span>
@@ -78,7 +82,8 @@
                     <span>Home</span>
                 </a>
                 <h1>Last Mile Science</h1>
-                <button style="background:none; border:none; cursor:pointer; color: var(--text-main);">
+                <button style="background:none; border:none; cursor:pointer; color: var(--text-main);"
+                    id="mobile-menu-btn">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
             </div>
@@ -405,6 +410,12 @@
                         <div class="card-container">
                             <div class="card-header">
                                 <h3 class="card-title">Regional Assignments</h3>
+                                <div class="card-actions">
+                                    <button class="btn-sm"><span class="material-symbols-outlined"
+                                            style="font-size: 18px;">add</span></button>
+                                    <button class="btn-sm"><span class="material-symbols-outlined"
+                                            style="font-size: 18px;">remove</span></button>
+                                </div>
                             </div>
                             <div class="map-wrapper">
                                 <img class="map-bg"
@@ -594,6 +605,9 @@
         document.addEventListener('DOMContentLoaded', () => {
             const navItems = document.querySelectorAll('.nav-item');
             const sections = document.querySelectorAll('.dashboard-section');
+            const sidebar = document.querySelector('.sidebar');
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const sidebarCloseBtn = document.getElementById('sidebar-close-btn');
 
             function showSection(sectionId) {
                 sections.forEach(sec => {
@@ -625,20 +639,51 @@
                 }
             }
 
-            document.getElementById('link-patients').addEventListener('click', (e) => {
-                e.preventDefault();
-                showSection('section-patients');
-            });
+            const linkPatients = document.getElementById('link-patients');
+            if (linkPatients) {
+                linkPatients.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showSection('section-patients');
+                    if (window.innerWidth < 768) {
+                        sidebar.classList.remove('mobile-open');
+                    }
+                });
+            }
 
-            document.getElementById('link-chws').addEventListener('click', (e) => {
-                e.preventDefault();
-                showSection('section-chws');
-            });
+            const linkChws = document.getElementById('link-chws');
+            if (linkChws) {
+                linkChws.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showSection('section-chws');
+                    if (window.innerWidth < 768) {
+                        sidebar.classList.remove('mobile-open');
+                    }
+                });
+            }
 
-            document.getElementById('link-dashboard').addEventListener('click', (e) => {
-                e.preventDefault();
-                showSection('section-patients'); // Default to patients for now
-            });
+            const linkDashboard = document.getElementById('link-dashboard');
+            if (linkDashboard) {
+                linkDashboard.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showSection('section-patients'); // Default to patients for now
+                    if (window.innerWidth < 768) {
+                        sidebar.classList.remove('mobile-open');
+                    }
+                });
+            }
+
+            // Mobile Menu Toggle
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    sidebar.classList.add('mobile-open');
+                });
+            }
+
+            if (sidebarCloseBtn) {
+                sidebarCloseBtn.addEventListener('click', () => {
+                    sidebar.classList.remove('mobile-open');
+                });
+            }
         });
     </script>
 </body>

@@ -938,3 +938,38 @@ svg {
 .region-highlight:hover .marker-tooltip {
     display: block;
 }
+
+/* Mobile Sidebar State */
+@media (max-width: 767px) {
+    .sidebar.mobile-open {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+
+    .sidebar-close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text-secondary);
+        z-index: 10;
+        padding: 0.5rem;
+    }
+
+    .sidebar-close-btn .material-symbols-outlined {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar-close-btn {
+        display: none;
+    }
+}

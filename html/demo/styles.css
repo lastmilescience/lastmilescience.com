@@ -20,6 +20,23 @@ body {
     min-height: 100vh;
 }
 
+.back-nav {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
 h1 {
     font-size: 2.25rem;
     font-weight: 800;

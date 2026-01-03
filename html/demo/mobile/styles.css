@@ -213,6 +213,29 @@ html.dark body {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
+.back-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--border-radius-full);
+    background-color: #f1f5f9;
+    /* slate-100 */
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: transform 0.1s;
+}
+
+html.dark .back-link {
+    background-color: #1e293b;
+    /* slate-800 */
+}
+
+.back-link:active {
+    transform: scale(0.95);
+}
+
 html.dark .app-header {
     background-color: var(--color-surface-dark);
 }

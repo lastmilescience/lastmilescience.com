@@ -2,26 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://lastmilescience.com/</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2026-06-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://lastmilescience.com/index.html</loc>
-        <lastmod>2025-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lastmilescience.com/demo/index.html</loc>
-        <lastmod>2025-10-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://lastmilescience.com/blog/</loc>
+        <lastmod>2026-06-14</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://lastmilescience.com/demo/dashboard.html</loc>
-        <lastmod>2025-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
     </url>
 </urlset>

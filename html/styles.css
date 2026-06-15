@@ -347,28 +347,9 @@ p {
     display: flex;
     align-items: center;
     overflow: hidden;
-}
-
-.hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.hero-bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120%;
-    object-fit: cover;
-    will-change: transform;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent);
+    background:
+        radial-gradient(ellipse 70% 80% at 18% 50%, rgba(207, 95, 58, 0.20) 0%, transparent 65%),
+        linear-gradient(160deg, #111827 0%, #18181B 100%);
 }
 
 .hero-content {
@@ -378,10 +359,20 @@ p {
     color: white;
 }
 
+@media (max-width: 767px) {
+    .hero {
+        height: auto;
+        min-height: 85vh;
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+        align-items: flex-start;
+    }
+}
+
 .hero-title {
     font-size: 3rem;
     margin-bottom: 2rem;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
 }
 
 @media (min-width: 768px) {
@@ -397,7 +388,7 @@ p {
     font-weight: 300;
     margin-bottom: 2.5rem;
     max-width: 42rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
     color: var(--gray-100);
 }
 
@@ -1149,7 +1140,7 @@ section#solutions {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, var(--olive-dark), var(--olive-light));
+    background: var(--background-dark);
     padding: 4rem 1.5rem 2rem;
     color: rgba(255, 255, 255, 0.9);
 }

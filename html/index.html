@@ -139,11 +139,6 @@
         </div>
     </nav>
     <header class="hero">
-        <div class="hero-bg">
-            <img id="hero-parallax" alt="Community health worker providing care in a rural setting"
-                src="resources/site.png" />
-            <div class="hero-overlay"></div>
-        </div>
         <div class="hero-content container">
             <div style="max-width: 48rem;">
                 <h1 class="hero-title">
@@ -537,19 +532,6 @@
         </div>
     </footer>
     <script>
-        // Parallax effect
-        window.addEventListener('scroll', () => {
-            const parallax = document.getElementById('hero-parallax');
-            if (parallax) {
-                const scrolled = window.pageYOffset;
-                if (scrolled < window.innerHeight * 1.5) {
-                    window.requestAnimationFrame(() => {
-                        parallax.style.transform = `translate3d(0, ${scrolled * 0.3}px, 0)`;
-                    });
-                }
-            }
-        }, { passive: true });
-
         // Sticky nav
         const navbar = document.getElementById('navbar');
         const banner = document.querySelector('.announcement-banner');
